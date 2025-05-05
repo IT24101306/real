@@ -57,7 +57,6 @@ public class SecurityConfig {
                                 "/css/**",
                                 "/js/**",
                                 "/images/**",
-                                "/salon.mp4",
                                 "/favicon.png"
                         ).permitAll()
                         .anyRequest().permitAll()
@@ -65,4 +64,4 @@ public class SecurityConfig {
                 .headers(headers -> headers.frameOptions().disable());
         return http.build();
     }
-} 
+}
